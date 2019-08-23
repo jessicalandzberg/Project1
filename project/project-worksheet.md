@@ -38,6 +38,17 @@ I am using 2 Apis
 
 - architectural design: https://res.cloudinary.com/jeslan/image/upload/v1566572530/Project%201/IMG_5075_x9k30n.jpg
 
+- There are 9 Components
+  1) App
+  2) Nav (links to Home, Most active, All stocks)
+  3) Footer
+  4) Main (API call)
+    5) Home (links to Most active and All stocks)
+    6) Most active
+      8) row
+    7) All Stocks
+      9) Single stock info
+
 ## Components
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
@@ -45,15 +56,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Creating the skeleton of the application with dummy headers in each component and proper linking | H | 3hrs| X | X |
-| Calling the API data and passing it to the necessary component | H | 2hrs| X | X |
-| Rendering the API data on the most active and All stock pages looping through objects | H | 2hrs| X | X |
+| Creating the skeleton of the application with dummy headers in each component and proper linking | H | 3hrs| X | 1hrs |
+| Calling the API data and passing it to the necessary component | H | 2hrs| X | 1hr|
 | Formatting Nav, Main, Home, Footer | H | 3hrs| X | X |
-| Formatting Most Active | H | 2hrs| X | X |
+| Rendering the API data on the most active and All stock pages looping through objects | H | 2hrs| X | X |
+| Formatting Most Active | M | 2hrs| X | X |
 | Applying search functionality on All stock | H | 2hrs| X | X |
-| Applying favorite functionality on All stock | H | 2hrs| X | X |
-| Formatting All stock | H | 2hrs| X | X |
-| Responsive Design | H | 3hrs| X | X |
+| Applying favorite functionality on All stock | M | 2hrs| X | X |
+| Formatting All stock | M | 2hrs| X | X |
+| Responsive Design | M | 3hrs| X | X |
 
 
 | Total | H | X| X | X |
