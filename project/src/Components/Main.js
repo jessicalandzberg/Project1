@@ -4,6 +4,8 @@ import {Route , Switch} from "react-router-dom"
 import Home from "./Home"
 import MostActive from "./MostActive"
 import AllStocks from "./AllStocks"
+import MyList from "./MyList"
+import '../CSS/general.css'
 
 class Main extends React.Component {
   constructor(props) {
@@ -36,16 +38,16 @@ class Main extends React.Component {
     this.makeApiCallAll()
   }
   render () {
-    console.log("Main: this is state mostActive", this.state.mostActive)
-    console.log("Main: this is state allStocks", this.state.allStocks)
+    console.log("Main: this is state", this.state)
     return(
       <div className="Main">
-        <h1> This is the Main component </h1>
         <Switch>
           <Route path= "/mostActive"
           render = {() => <MostActive mostActive= {this.state.mostActive}/> } />
           <Route path= "/allStocks"
           render = {() => <AllStocks allStocks= {this.state.allStocks}/> } />
+          <Route path= "/myList"
+          render = {() => <MyList/>} />
           <Route path= "/" component= {Home} />
         </Switch>
       </div>

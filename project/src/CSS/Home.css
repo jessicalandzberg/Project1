@@ -1,0 +1,40 @@
+.Home {
+  background: black;
+  height: calc(100vh - 40px);
+  /* top: 0px; */
+  padding-top: 50px;
+  font-size: 24px;
+
+}
+
+.HRow {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.halfPage1{
+  width: 50%;
+  height: 100%;
+  border-right: 2px white solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.halfPage2{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home a {
+  color: white;
+  text-decoration: none;
+}
+
+.Home a:hover {
+  color: blue
+}

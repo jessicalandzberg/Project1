@@ -1,0 +1,40 @@
+.MostActive {
+  background-color: green;
+  padding-top: 50px;
+  min-height: calc(100vh - 40px);
+}
+
+.header {
+  text-align: center;
+}
+
+.MAChart {
+  padding-bottom: 20px;
+}
+
+.MARow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: .5px black solid;
+}
+
+.MAName {
+  width: 20%;
+}
+.MATicker {
+  width: 10%;
+  text-align: center;
+}
+.MAPrice {
+  width: 10%;
+  text-align: center;
+}
+.MADollarChange {
+  width: 10%;
+  text-align: center;
+}
+.MAPercentChange {
+  width: 10%;
+  text-align: center;
+}

@@ -1,16 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import '../CSS/Home.css'
 
-class Home extends React.Component {
-  render () {
+function Home() {
     return(
       <div className="Home">
-        <h4> This is the Home Component </h4>
-        <h4><Link to='/mostActive'>Check out the most active stocks today</Link></h4>
-        <h4><Link to='/AllStocks'>Search by company name</Link></h4>
+        <div className= "HRow">
+          <div className= "halfPage1">
+            <h4> <Link to='/mostActive'>Check out the most active stocks today</Link></h4>
+          </div>
+          <div className= "halfPage2">
+            <h4><Link to='/AllStocks'>Search by company name</Link></h4>
+          </div>
+        </div>
       </div>
     )
-  }
 }
 
 export default Home;

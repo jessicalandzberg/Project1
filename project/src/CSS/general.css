@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Exo', sans-serif;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  /* position: fixed; */
+  /* width: 100%; */
+  /* top: 0px; */
+}
+
+#root {
+  /* position: fixed; */
+  /* width: 100%; */
+  /* top: 0px; */
+}
+
+/* .App {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+} */
+
+.NavComponent {
+  position: fixed;
+  background: white;
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  /* font-family: 'Lexend Zetta', sans-serif; */
+  border-bottom: 5px black solid;
+
+}
+
+.Footer {
+  background: white;
+  font-size: 12px;
+  width: 100%;
+  height: 40px;
+  /* font-family: 'Lexend Zetta', sans-serif; */
+}

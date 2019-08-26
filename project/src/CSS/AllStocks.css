@@ -1,0 +1,38 @@
+.AllStocks {
+  background: green;
+  padding-top: 50px;
+  min-height: calc(100vh - 40px);
+}
+
+.header {
+  text-align: center;
+}
+
+.ASRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.allStockList {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  /* position: relative; */
+}
+
+input {
+  /* position: fixed; */
+}
+
+.singleStock {
+  width: 50%;
+  height: 100%;
+}
+
+.AllStockSingleStockInfo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  position: fixed;
+}

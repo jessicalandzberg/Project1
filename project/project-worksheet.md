@@ -59,7 +59,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Creating the skeleton of the application with dummy headers in each component and proper linking | H | 3hrs| X | 1hrs |
 | Calling the API data and passing it to the necessary component | H | 2hrs| X | 1hr|
 | Formatting Nav, Main, Home, Footer | H | 3hrs| X | X |
-| Rendering the API data on the most active and All stock pages looping through objects | H | 2hrs| X | X |
+| Rendering the API data on the most active and All stock pages looping through objects | H | 2hrs| X | 1 hr |
 | Formatting Most Active | M | 2hrs| X | X |
 | Applying search functionality on All stock | H | 2hrs| X | X |
 | Applying favorite functionality on All stock | M | 2hrs| X | X |
@@ -71,6 +71,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Additional Libraries
 TBD - Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.
+axios
+direct router dom
 
 ## Code Snippet
 
