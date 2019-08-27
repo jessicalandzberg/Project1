@@ -8,6 +8,11 @@
   text-align: center;
 }
 
+.ASSearchRow {
+  display: flex;
+  justify-content: space-between;
+}
+
 .ASRow {
   display: flex;
   flex-direction: row;
@@ -34,5 +39,4 @@ input {
   flex-direction: column;
   align-content: center;
   text-align: center;
-  position: fixed;
 }

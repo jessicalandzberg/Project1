@@ -35,9 +35,14 @@ class AllStocks extends React.Component {
 
     const matchedRender = matched.map((d,i) => {
       return <div
-                key = {i}
+              className = "ASSearchRow"
+              key = {i}>
+              <div
                 onClick = {()=> this.handleClick(d)}
                 > {d.name} </div>
+              <div
+                onClick = {()=> this.props.addToList(d)}> + </div>
+              </div>
     })
 
     return(

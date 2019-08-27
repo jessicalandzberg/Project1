@@ -12,7 +12,8 @@ class Main extends React.Component {
     super(props)
     this.state= {
       mostActive: [],
-      allStocks: []
+      allStocks: [],
+      list: []
     }
   }
   makeApiCallActive = async () => {
@@ -33,6 +34,21 @@ class Main extends React.Component {
       }
     )
   }
+
+  addToList = (item) => {
+    let checkIfInFaves = this.state.list.filter((d,i) => {
+      return d.name == item.name
+    })
+    if (checkIfInFaves.length == 0) {
+      this.setState(prevState => ({
+        list:[...prevState.list, item]
+      }), () => {
+        console.log("this is add to list state", this.state.list)
+      }
+      )
+    }
+  }
+
   componentDidMount() {
     this.makeApiCallActive()
     this.makeApiCallAll()
@@ -45,9 +61,13 @@ class Main extends React.Component {
           <Route path= "/mostActive"
           render = {() => <MostActive mostActive= {this.state.mostActive}/> } />
           <Route path= "/allStocks"
-          render = {() => <AllStocks allStocks= {this.state.allStocks}/> } />
+          render = {() => <AllStocks
+                          allStocks= {this.state.allStocks}
+                          addToList= {this.addToList}/> } />
           <Route path= "/myList"
-          render = {() => <MyList/>} />
+          render = {() => <MyList
+                          myList = {this.state.list}
+                          />} />
           <Route path= "/" component= {Home} />
         </Switch>
       </div>
