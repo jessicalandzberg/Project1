@@ -6,8 +6,9 @@ class MostActive extends React.Component {
 
   render () {
     console.log("this is MostActive props", this.props)
+
     const mostActiveRender = this.props.mostActive.map((d,i) => {
-      return <MARow key= {i} mostActive= {d} number={i+1}/>
+      return <MARow key= {i} mostActive= {d}/>
     })
 
     return(

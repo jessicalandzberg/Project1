@@ -1,5 +1,4 @@
 .AllStocks {
-  background: green;
   padding-top: 50px;
   min-height: calc(100vh - 40px);
 }
@@ -11,6 +10,7 @@
 .ASSearchRow {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px gray dashed;
 }
 
 .ASRow {
@@ -22,11 +22,15 @@
   width: 50%;
   height: 100%;
   text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
   /* position: relative; */
 }
 
 input {
-  /* position: fixed; */
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .singleStock {
@@ -39,4 +43,8 @@ input {
   flex-direction: column;
   align-content: center;
   text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  background: black;
+  color: white;
 }

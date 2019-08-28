@@ -18,15 +18,19 @@ class MyList extends React.Component {
   }
 
   render () {
-    const favesRender = this.props.myList.map((d,i) => {
-      return <div
-              className = "FavRowList"
-              key = {i}>
-              <div
-                onClick = {()=> this.handleClick(d)}
-                > {d.name} </div>
-              </div>
-    })
+
+      const favesRender = this.props.myList.map((d,i) => {
+        return <div
+                className = "FavRowList"
+                key = {i}>
+                  <div
+                    onClick = {()=> this.handleClick(d)}
+                    > {d.name} </div>
+                  <div
+                    onClick = {()=> this.props.removeFromList(d.id)}> - </div>
+                </div>
+      })
+
     return (
       <div className="MyList">
           <h3 className="header"> My List </h3>
@@ -42,7 +46,9 @@ class MyList extends React.Component {
               <AllStockSingleStockInfo
               activeStock= {this.state.activeStock} />
             </div>
+
         </div>
+        
       </div>
     )
   }
