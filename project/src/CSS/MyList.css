@@ -25,11 +25,20 @@
   text-align: center;
   padding-right: 100px;
   padding-left: 100px;
-  /* position: relative; */
 }
 
 
-.singleStock {
-  width: 50%;
-  height: 100%;
+@media screen and (max-width: 570px) {
+  .FavRow {
+    flex-direction: column;
+  }
+  .FavList {
+    width: 100%;
+  }
+  .MyList .singleStock {
+    width: 100%;
+  }
+  .MyList h3 {
+    font-size: 15px;
+  }
 }

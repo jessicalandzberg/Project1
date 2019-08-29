@@ -21,7 +21,7 @@
 .allStockList {
   width: 50%;
   height: 100%;
-  text-align: center;
+  /* text-align: center; */
   padding-right: 100px;
   padding-left: 100px;
   /* position: relative; */
@@ -38,6 +38,10 @@ input {
   height: 100%;
 }
 
+.AllStocks h4 {
+  text-align: center;
+}
+
 .AllStockSingleStockInfo {
   display: flex;
   flex-direction: column;
@@ -47,4 +51,24 @@ input {
   margin-left: 100px;
   background: black;
   color: white;
+}
+@media screen and (max-width: 570px) {
+  .AllStockSingleStockInfo {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .AllStocks h3 {
+    font-size: 15px;
+  }
+  .allStockList {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+  }
+  .AllStockSingleStockInfo {
+    font-size: 10px;
+  }
+  input {
+    font-size: 10px;
+  }
 }

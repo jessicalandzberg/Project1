@@ -39,3 +39,12 @@
   width: 15%;
   text-align: center;
 }
+
+@media screen and (max-width: 570px) {
+  .MAChart {
+    font-size: 10px;
+  }
+  .MostActive h3 {
+    font-size: 15px;
+  }
+}

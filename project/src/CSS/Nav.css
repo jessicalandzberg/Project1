@@ -32,3 +32,12 @@ Nav a {
 Nav a:hover {
   color: blue
 }
+
+@media screen and (max-width: 570px) {
+  .logoStyles {
+    font-size: 12px;
+  }
+  .ulStyles {
+    font-size: 10px;
+  }
+}
